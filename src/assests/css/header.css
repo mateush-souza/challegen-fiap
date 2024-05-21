@@ -1,0 +1,63 @@
+/* header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+} */
+
+/* #burguer {
+    color: #00A3FF;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#burguer :hover {
+    color: gray;
+}
+
+#items {
+    display: none;
+} */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-items {
+    margin-right: 67px;
+}
+
+.nav-items :hover {
+    color: #00A3FF;
+    transition: ease-in-out 0.5ms;
+}
+
+.register {
+   display: flex;
+   align-items: center;
+}
+
+.btn {
+   background-color: #00A3FF;
+   color: white;
+   width: 122px;
+   height: 45px;
+   border-radius: 15px;
+   font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .image-home {
+        display: none;
+    }
+}
