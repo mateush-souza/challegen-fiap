@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/assests/css/home.css">
     <link rel="stylesheet" href="/src/assests/css/header.css">
     <link rel="stylesheet" href="/src/assests/css/reset.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="/src/js/menu.js"></script>
     <title>Projeto</title>
 </head>
+
 <body>
     <header>
-        <!-- <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
-            menu
-            </span> -->
         <nav class="navbar">
-            <img
-                class="nav-logo" 
-                src="/src/assests/img/porto.png" 
-                alt="Logo Porto"
-                width="180px"
-                height="50px"   
-            />
+            <img class="nav-logo" src="/src/assests/img/porto.png" alt="Logo Porto" width="180px" height="50px" />
             <ul class="nav-container">
-                <li id="items" class="nav-items"><a href="#">Sobre nós</a></li>
-                <li id="items" class="nav-items"><a href="#">Como trabalhamos</a></li>
-                <li id="items" class="nav-items"><a href="#">Localização</a></li>
+                <li class="nav-items"><a href="#">Sobre nós</a></li>
+                <li class="nav-items"><a href="#">Como trabalhamos</a></li>
+                <li class="nav-items"><a href="#">Localização</a></li>
             </ul>
             <ul class="register">
-                <li id="items" class="nav-items"><a href="#">Inscrever-se</a></li>
+                <li class="nav-items"><a href="#">Inscrever-se</a></li>
                 <li>
-                    <button id="items" class="btn nav-items">Conecte-se</button>
+                    <button class="btn nav-items">Conecte-se</button>
                 </li>
             </ul>
         </nav>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()">
+                <img class="icon" src="/src/assests/img/hamburguer.svg" alt="icone menu hamburguer">
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <nav class="nav">
+                <ul class="nav-container">
+                    <li class="nav-items"><a class="link-nav" href="#">Sobre nós</a></li>
+                    <li class="nav-items"><a class="link-nav" href="#">Como trabalhamos</a></li>
+                    <li class="nav-items"><a class="link-nav" href="#">Localização</a></li>
+                </ul>
+                <ul class="register">
+                    <li class="nav-items"><a class="link-nav" href="#">Inscrever-se</a></li>
+                    <li>
+                        <button class="btn nav-items">Conecte-se</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="banner">
@@ -43,83 +57,101 @@
                 <p class="description">Guinchos autorizados e verificados por especialistas!</p>
                 <button class="btn">Peça já o seu</button>
             </div>
-            <img
-                class="image-home"
-                src="assests/img/banner.jpg" 
-                alt="Imagem com varios guinchos em um estacionamento"
-                width="468px"
-                height="568px"
-                loading="lazy"
-            />
+            <img class="image-home" src="assests/img/banner.jpg" alt="Imagem com varios guinchos em um estacionamento"
+                width="468px" height="568px" loading="lazy" />
         </section>
     </main>
     <section class="how-we-work">
         <div class="text-container-work">
             <h2 class="title-work">Como Trabalhamos?</h2>
-            <p class="description-work">Com apenas <span class="description-work blue">3 passos</span> nosso guincho vai até você</p>
+            <p class="description-work">Com apenas <span class="description-work blue">3 passos</span> nosso guincho vai
+                até você</p>
         </div>
         <div class="image-container-work">
-            <img
-                class="location" 
-                src="assests/img/location.jpg" 
-                alt="Icone de localização"
-                width="298px"
-                height="247px"
-                loading="lazy"
-            />
-            <img
-                class="calendar"
-                src="assests/img/calendar-div.png" 
-                alt="Icone de calendário"
-                width="298px"
-                height="247px"
-                loading="lazy"
-            />
-            <img
-                class="trucker"
-                src="assests/img/trucker.jpg" 
-                alt="Icone de um guincho"
-                width="298px"
-                height="247px"
-                loading="lazy"
-            />
-        </div>
-        <div class="description-container-work">
-            <div class="text">
-                <h3 class="text-work">Informe sua <span class="text-work blue">localização</span></h3>
-                <p class="information">Basta ativar seu GPS, ou inserir manualmente</p>
+            <div class="container-location">
+                <img class="location" src="assests/img/location.jpg" alt="Icone de localização" width="298px"
+                    height="247px" loading="lazy" />
+                <div class="text">
+                    <h3 class="text-work">Informe sua <span class="text-work blue">localização</span></h3>
+                    <p class="information">Basta ativar seu GPS, ou inserir manualmente</p>
+                </div>
             </div>
-            <div class="text">
-                <h3 class="text-work">Solicite o <span class="text-work blue">guincho</span></h3>
-                <p class="information">Insira a data para o guincho ir até você</p>
+            <div class="container-calendar">
+                <img class="calendar" src="assests/img/calendar-div.png" alt="Icone de calendário" width="298px"
+                    height="247px" loading="lazy" />
+                <div class="text">
+                    <h3 class="text-work">Solicite o <span class="text-work blue">guincho</span></h3>
+                    <p class="information">Insira a data para o guincho ir até você</p>
+                </div>
             </div>
-            <div class="text">
-                <h3 class="text-work">Vamos até  <span class="text-work blue">você</span></h3>
-                <p class="information">Motorista verificados vão até você</p>
+            <div class="container-trucker">
+                <img class="trucker" src="assests/img/trucker.jpg" alt="Icone de um guincho" width="298px"
+                    height="247px" loading="lazy" />
+                <div class="text">
+                    <h3 class="text-work">Vamos até <span class="text-work blue">você</span></h3>
+                    <p class="information">Motorista verificados vão até você</p>
+                </div>
             </div>
         </div>
     </section>
-    <section>
-        <span>Conheça o Grupo</span>
-        <h2>Sobre nós</h2>
-        <div>
-            <span>Mateus</span>
-            <p>Olá me chamo Mateus e fiquei responsável pela parte do Front-end. Estou muito feliz de ter ajudado com esse projeto</p>
-            <a href="https://github.com/mateush-souza" target="_blank" rel="noopener noreferrer">Github</a>
+    <section class="cards">
+        <div class="text-container-work">
+            <span class="title-work">Conheça o Grupo</span>
+            <h2 class="description-work">Sobre nós</h2>
         </div>
-        <div>
-            <span>Emilly</span>
-            <p>Olá me chamo Mateus e fiquei responsável pela parte do chat bot. Estou muito feliz de ter ajudado com esse projeto</p>
-            <a href="https://github.com/emillyribeiro90" target="_blank" rel="noopener noreferrer">Github</a>
-        </div>
-        <div>
-            <span>Kaio</span>
-            <p>Olá me chamo Kaio e fiquei responsável pela parte o python. Estou muito feliz de ter ajudado com esse projeto</p>
-            <a href="https://github.com/KaioCumpian" target="_blank" rel="noopener noreferrer">Github</a>
+        <div class="grid">
+            <div class="card-container">
+                <div class="header-card">
+                    <span class="title-card">Mateus</span>
+                    <img
+                        class="image-card" 
+                        src="./assests/img/mateus.png" 
+                        alt="Foto do integrante Mateus"
+                        width="176px"
+                        height="169px"
+                    />
+                </div>
+                <p class="description-card">Olá me chamo Mateus e fiquei responsável pela parte do Front-end. Estou muito feliz de ter ajudado
+                    com esse projeto</p>
+                <a href="https://github.com/mateush-souza" target="_blank" rel="noopener noreferrer">Acesse meu Github</a>
+            </div>
+            <div class="card-container">
+                <div class="header-card">
+                    <span class="title-card">Emilly</span>
+                    <img
+                        class="image-card" 
+                        src="./assests/img/emilly.png" 
+                        alt="foto da integrante Emilly"
+                        width="176px"
+                        height="169px"
+                    />
+                </div>
+                <p class="description-card">Olá me chamo Emilly e fiquei responsável pela parte do chat bot. Estou muito feliz de ter ajudado com
+                    esse projeto</p>
+                <a href="https://github.com/emillyribeiro90" target="_blank" rel="noopener noreferrer">Acesse meu Github</a>
+            </div>
+            <div class="card-container">
+                <div class="header-card">
+                    <span class="title-card">Kaio</span>
+                    <img
+                        class="image-card" 
+                        src="./assests/img/kaio.png" 
+                        alt="Foto do integrante Kaio"
+                        width="176px"
+                        height="169px"
+                    />
+                </div>
+                <p class="description-card">Olá me chamo Kaio e fiquei responsável pela parte o python. Estou muito feliz de ter ajudado com esse
+                    projeto</p>
+                <a href="https://github.com/KaioCumpian" target="_blank" rel="noopener noreferrer">Acesse meu Github</a>
+            </div>
         </div>
     </section>
     <footer>
-        <span>Projeto com fins acadêmico</span>
+        <div class="footer">
+            <span>Projeto com fins acadêmico</span>
+        </div>
     </footer>
 </body>
+
 </html>
